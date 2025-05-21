@@ -1,0 +1,141 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #e8f0fe; /* soft blue background */
+  color: #333;
+}
+
+input,
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1.8px solid #ccc;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4a7dfc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 125, 252, 0.6);
+}
+
+button {
+  background-color: #4a7dfc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(74, 125, 252, 0.3);
+}
+
+button:hover {
+  background-color: #365fcf;
+  box-shadow: 0 6px 12px rgba(54, 95, 207, 0.5);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(54, 95, 207, 0.4);
+}
+
+/* Tabs container styling */
+#tabsContainer div {
+  background: #ffffff;
+  padding: 8px 10px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(74, 125, 252, 0.15);
+  display: flex;
+  gap: 10px;
+}
+
+#tabsContainer input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 4px 6px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+#tabsContainer input:focus {
+  border-bottom: 2px solid #4a7dfc;
+  outline: none;
+}
+
+/* Saved sessions list */
+#sessionList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+#sessionList li {
+  background: #f0f4ff;
+  margin-bottom: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 5px rgba(74, 125, 252, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+#sessionList li:hover {
+  background-color: #d3e0ff;
+}
+
+#sessionList li input {
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 4px 6px;
+  width: 70%;
+  border-radius: 6px;
+  cursor: text;
+}
+
+#sessionList li input:focus {
+  background: white;
+  box-shadow: 0 0 6px rgba(74, 125, 252, 0.5);
+  outline: none;
+}
+
+.session-item button {
+  background-color: #365fcf;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 8px;
+  box-shadow: 0 3px 6px rgba(54, 95, 207, 0.4);
+  transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+.session-item button:hover {
+  background-color: #2746a0;
+  transform: scale(1.05);
+}
+
+/* subtle fade-in animation for sessions */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#sessionList li {
+  animation: fadeInUp 0.3s ease forwards;
+}
