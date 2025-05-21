@@ -82,5 +82,4 @@ async function renameSession(id, newName) {
   });
 }
 
-// Initial load
 loadSessions();

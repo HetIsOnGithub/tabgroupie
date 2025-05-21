@@ -41,7 +41,6 @@ button:active {
   box-shadow: 0 3px 6px rgba(54, 95, 207, 0.4);
 }
 
-/* Tabs container styling */
 #tabsContainer div {
   background: #ffffff;
   padding: 8px 10px;
@@ -67,7 +66,6 @@ button:active {
   outline: none;
 }
 
-/* Saved sessions list */
 #sessionList {
   list-style: none;
   padding-left: 0;
@@ -124,7 +122,6 @@ button:active {
   transform: scale(1.05);
 }
 
-/* subtle fade-in animation for sessions */
 @keyframes fadeInUp {
   from {
     opacity: 0;
