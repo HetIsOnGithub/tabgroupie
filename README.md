@@ -34,3 +34,38 @@ TabGroupie is a simple web application that lets you **save**, **manage**, and *
 
 
 ---
+
+## 🔧 Environment Variables
+
+Create a `.env` file in the root directory:
+MONGO_URI=your_mongodb_connection_string
+
+
+---
+
+## 🧑‍💻 Getting Started (Local Development)
+
+bash: 
+
+# Clone the repository
+git clone https://github.com/HetIsOnGithub/tabgroupie.git
+cd tabgroupie
+
+# Install server dependencies
+npm install
+
+# Run the server
+node index.js
+
+🙌 Contributing
+
+Pull requests are welcome! For major changes, open an issue first to discuss what you'd like to change.
+
+💡 Future Improvements:
+
+-✅ Open all tabs in one click
+-🔐 User authentication
+-📱 Mobile-friendly UI
+
+👨‍💻 Author
+Het github:- https://github.com/HetIsOnGithub
